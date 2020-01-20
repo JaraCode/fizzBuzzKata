@@ -1,4 +1,4 @@
-const fizzBuzz = require('./index');
+const {fizzBuzz, greeter} = require('./index');
 
 // fizzBuzz is the SUT (Subject Under Test)
 describe('Fizzbuzz should', () => {
@@ -20,4 +20,13 @@ describe('Fizzbuzz should', () => {
         expect(fizzBuzz(15)).toBe('FizzBuzz');
     });
 
+});
+
+
+describe('Greeter should', () => {
+
+    test('return greeted hello ', () => {
+        expect(greeter('Carlos')).toBe('Hello! Carlos');
+    });
+    
 });

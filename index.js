@@ -15,4 +15,11 @@ function fizzBuzz(number) {
     return number;
 }
 
-module.exports = fizzBuzz;
+function greeter(name) {
+    return "Hello! " + name;
+}
+
+module.exports = {
+    fizzBuzz,
+    greeter
+};
